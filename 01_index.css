@@ -1,0 +1,55 @@
+div {
+  margin: 50px auto;
+  width: 300px;
+}
+
+label {
+  position: relative;
+  margin-right: 30px;
+}
+
+label, label:before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+}
+
+.lab1, .lab2 {
+  border-radius: 1000px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  border: 2px solid red;
+}
+
+input:checked + label:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 10px;
+  height: 10px;
+}
+
+input[type=radio]:checked + label:before {
+  border: none;
+  border-radius: 1000px;
+  background: red;
+}
+
+input[type=checkbox]:checked + label:before {
+  color: red;
+  height: 20px;
+  border: 3px solid;
+  border-top: none;
+  border-left: none;
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+/*# sourceMappingURL=01_index.css.map */
